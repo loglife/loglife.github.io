@@ -24,21 +24,22 @@
   
     <link rel="icon" href="/favicon.png">
   
-  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="/main.css?v=4.0.0.css">
+  
+
   
 
 </head>
 
 <body>
-  <div id="container">
-    <div class="left-col">
+  <div id="container" q-class="show:isCtnShow">
+    <canvas id="anm-canvas" class="anm-canvas"></canvas>
+    <div class="left-col" q-class="show:isShow">
       <div class="overlay"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			
 			<img src="/images/loglife.jpg" class="js-avatar">
-			
 		</a>
 
 		<hgroup>
@@ -64,22 +65,17 @@
 	        
     		
     			
-    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">所有文章</a>
+    			<a data-idx="0" q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
     			
     			
             
     			
-    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">目录</a>
+    			<a data-idx="1" q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">链接</a>
     			
     			
             
     			
-    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">链接</a>
-    			
-    			
-            
-    			
-    			<a class="js-smart-menu" data-idx="3" href="javascript:void(0)">关于我</a>
+    			<a data-idx="2" q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
     			
     			
             
@@ -93,15 +89,13 @@
 		        
 					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
 		        
-					<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/mu-mu-" title="zhihu"><i class="icon-zhihu"></i></a>
-		        
 			</div>
 		</nav>
 	</header>		
 </div>
 
     </div>
-    <div class="mid-col">
+    <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       <nav id="mobile-nav">
   	<div class="overlay">
   		<div class="slider-trigger"><i class="icon-sort"></i></div>
@@ -110,9 +104,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				
-					<img src="/images/loglife.jpg" class="js-avatar">
-				
+				<img src="/images/loglife.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author">Loglife</h1>
@@ -129,6 +121,9 @@
 		        
 					<li><a href="/photos">相册</a></li>
 		        
+		        
+		        	<li><a href="/archives/">所有文章</a></li>
+		        
 				</ul>
 			</nav>
 			<nav class="header-nav">
@@ -140,16 +135,19 @@
 			        
 						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
 			        
-						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/mu-mu-" title="zhihu"><i class="icon-zhihu"></i></a>
-			        
 				</div>
 			</nav>
 		</header>				
 	</div>
 </nav>
 
-      <div class="body-wrap">
-        <article id="post-石家庄的公交2016-11-23" class="article article-type-post" itemscope itemprop="blogPost">
+      <div id="wrapper" class="body-wrap">
+        <div class="menu-l">
+          <div class="canvas-wrap">
+            <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
+          </div>
+          <div id="js-content" class="content-ll">
+            <article id="post-石家庄的公交2016-11-23" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -186,7 +184,8 @@
       
 
       
-        <div class="share-btn share-icons tooltip-left">
+        
+<div class="share-btn share-icons tooltip-left">
   <div class="tooltip tooltip-east">
     <span class="tooltip-item">
       <a href="javascript:;" class="share-sns share-outer">
@@ -229,7 +228,9 @@
 <div class="page-modal wx-share js-wx-box">
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode"></div>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2016/11/23/石家庄的公交2016-11-23/" alt="微信分享二维码">
+    </div>
 </div>
 
 <div class="mask js-mask"></div>
@@ -258,6 +259,8 @@
 
 
 
+          </div>
+        </div>
       </div>
       <footer id="footer">
   <div class="outer">
@@ -266,7 +269,7 @@
     		&copy; 2016 Loglife
     	</div>
       	<div class="footer-right">
-      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme Yilia
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme Yilia 
       	</div>
     </div>
   </div>
@@ -275,7 +278,6 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		animate: true,
 		isHome: false,
 		isPost: true,
 		isArchive: false,
@@ -287,57 +289,97 @@
 	}
 </script>
 
-<script src="/./main.js"></script>
+<script src="/./main.js?v=4.0.0.js"></script>
 
 
     
-<div class="tools-col">
-  <ul class="btn-wrap">
-    
-      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
-    
-    
-      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
-    
-    
-      <li data-hook="tools-section-friends"><span class="text">友链</span><i class="icon-link"></i></li>
-    
-    
-      <li data-hook="tools-section-me"><span class="text">我</span><i class="icon-smile"></i></li>
-    
-  </ul>
+<div class="tools-col" q-class="show:isShow,hide:isShow|isFalse" q-on="click:stop(e)">
   <div class="tools-wrap">
     
-    	<section class="tools-section tools-section-all chose">
+    	<section class="tools-section tools-section-all" q-show="innerArchive">
+        <div class="search-wrap">
+          <input class="search-ipt" q-model="search" type="text" placeholder="find something…">
+          <i class="icon-search icon" q-show="search|isEmptyStr"></i>
+          <i class="icon-close icon" q-show="search|isNotEmptyStr" q-on="click:clearChose(e)"></i>
+        </div>
+        <div class="widget tagcloud search-tag">
+          <p class="search-tag-wording">tag:</p>
+          <label class="search-switch">
+            <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
+          </label>
+          <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">随笔</a>
+              </li>
+            
+            <div class="clearfix"></div>
+          </ul>
+        </div>
+        <ul class="search-ul">
+          <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
+            缺失模块。<br/>1、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
+            2、在根目录_config.yml里添加配置：
+<pre style="font-size: 12px;" q-show="jsonFail">
+  jsonContent:
+    meta: false
+    pages: false
+    posts:
+      title: true
+      date: true
+      path: true
+      text: true
+      raw: false
+      content: false
+      slug: false
+      updated: false
+      comments: false
+      link: false
+      permalink: false
+      excerpt: false
+      categories: false
+      tags: true
+</pre>
+          </p>
+          <li class="search-li" q-repeat="items" q-show="isShow">
+            <a q-attr="href:path|urlformat" class="search-title"><i class="icon-quo-left icon"></i><span q-text="title"></span></a>
+            <p class="search-time">
+              <i class="icon-calendar icon"></i>
+              <span q-text="date|dateformat"></span>
+            </p>
+            <p class="search-tag">
+              <i class="icon-price-tags icon"></i>
+              <span q-repeat="tags" q-on="click:choseTag(e, name)" q-text="name|tagformat"></span>
+            </p>
+          </li>
+        </ul>
     	</section>
     
 
     
-    	<section class="tools-section tools-section-tag">
-    			<div class="widget tagcloud" id="js-tagcloud">
-    				<a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
-    			</div>
-    	</section>
-    
-
-    
-    	<section class="tools-section tools-section-friends">
+    	<section class="tools-section tools-section-friends" q-show="friends">
   		
-  			<div class="friends-wrap" id="js-friends">
-  			
-  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.lofter.com/">乐乎lofter</a>
-  	        
-  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://huaban.com/">花瓣网</a>
-  	        
-  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.polayoutu.com/">泼辣有图</a>
-  	        
-  	        </div>
+        <ul class="search-ul">
+          
+            <li class="search-li">
+              <a href="http://www.lofter.com/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>乐乎lofter</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://huaban.com/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>花瓣网</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://www.polayoutu.com/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>泼辣有图</a>
+            </li>
+          
+        </ul>
   		
     	</section>
     
 
     
-    	<section class="tools-section tools-section-me">
+    	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
   	  		<div class="aboutme-wrap" id="js-aboutme">荆门大学物理学菜鸟一枚&lt;br/&gt;&lt;br/&gt;性别男,爱好女&lt;br/&gt;学习前端ing,喜欢摄影相关......</div>
   	  	

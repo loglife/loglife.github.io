@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Loglife&#39;s blog</title>
+  <subtitle>念念不忘,无须多言</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-03-01T08:36:47.031Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Loglife</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>石家庄的公交--2016.11.23</title>
+    <link href="http://yoursite.com/2016/11/23/%E7%9F%B3%E5%AE%B6%E5%BA%84%E7%9A%84%E5%85%AC%E4%BA%A42016-11-23/"/>
+    <id>http://yoursite.com/2016/11/23/石家庄的公交2016-11-23/</id>
+    <published>2016-11-23T12:38:10.000Z</published>
+    <updated>2017-03-01T08:36:47.031Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;hr&gt;&lt;br&gt;今天去退公交卡,发现坐公交车免费,看来又限行了。&lt;br&gt;说真的，北方雾霾的主因应该不是汽车尾气排放……&lt;br&gt;限行也好(对于我们这种冒的车的人而言)，至少路上不那么堵了，做公交还免费，挺好的！&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="http://yoursite.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>可能最后一次在石家庄看雪</title>
+    <link href="http://yoursite.com/2016/11/21/%E5%8F%AF%E8%83%BD%E6%9C%80%E5%90%8E%E4%B8%80%E6%AC%A1%E5%9C%A8%E7%9F%B3%E5%AE%B6%E5%BA%84%E7%9C%8B%E9%9B%AA-2016-11-21/"/>
+    <id>http://yoursite.com/2016/11/21/可能最后一次在石家庄看雪-2016-11-21/</id>
+    <published>2016-11-21T12:38:09.000Z</published>
+    <updated>2017-02-28T14:24:16.405Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;不知不觉在石家庄呆了两年了,其中离开过,又回来了,&lt;br&gt;可是这次是真的要离开了,个人与家人的因素等等。&lt;/p&gt;
+&lt;p&gt;曾经总是想过自己想过的生活，做自己想做的那一类人。&lt;/p&gt;
+&lt;p&gt;后来渐渐明白，自己梦想还是没有给自己足够的勇气和毅力，自己开始学会放弃;   &lt;/p&gt;
+&lt;p&gt;渐渐明白，人生是自己的，但又不是自己一个人的，多出来的责任与牵挂……&lt;/p&gt;
+&lt;p&gt;回到正题上吧！&lt;br&gt;2016年11月21日，小雪。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="http://yoursite.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>blog人生--2016.11.01</title>
+    <link href="http://yoursite.com/2016/11/01/blog-life2016-11-01/"/>
+    <id>http://yoursite.com/2016/11/01/blog-life2016-11-01/</id>
+    <published>2016-11-01T12:38:10.000Z</published>
+    <updated>2017-03-01T06:38:33.841Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+
+&lt;p&gt;其实，一个人说什么并不重要，重要的是他做什么。&lt;br&gt;看清他做什么，才明白他是一个怎样的人。&lt;br&gt;而于己，“做”远比“说”更为重要。&lt;/p&gt;
+&lt;p&gt;很早以前，就想做一个自己的网站。&lt;br&gt;写写自己的故事，身边朋友的故事，与大家分享好的电影，文章，&lt;br&gt;抑或美好的人和物。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="http://yoursite.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+</feed>
